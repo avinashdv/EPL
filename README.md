@@ -1,4 +1,4 @@
-# English Premier League Angular Application
+# English Premier League (Angular JS Application)
 
 ## Getting Started
 
