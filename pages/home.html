@@ -1,0 +1,85 @@
+  
+<!-- Container -->
+<div class="w3-content" style="max-width:1400px">
+
+	<div class="w3-panel w3-card w3-padding-32" ng-init="homeCtrl.loadOne()" style="background-color: #ededee">
+
+		<!-- filter by matchday in both 15-16 n 16-17 -->
+
+		<div class="w3-container">
+			<div class="w3-row-padding w3-center">
+				<div class="w3-col l4 s12 fontS w3-margin-bottom">
+					<input type="text" class="w3-input" ng-model="year" placeholder="search by Year">
+				</div>
+				<div class="w3-col l4 s12 fontS w3-margin-bottom">
+					<input type="text" class="w3-input" ng-model="teamName" placeholder="search by team name">
+				</div>
+				<div class="w3-col l4 s12 fontS w3-margin-bottom">
+					<input type="text" class="w3-input" ng-model="matchDay" placeholder="search by matchday">
+				</div>
+			</div>
+		</div>
+	
+		<!-- 2015-16 data -->
+		<h1 style="padding-left:20px;color:#3c003d"><b class="w3-padding-small fontB" style="background-color:white">2015-16</b></h1>
+
+		<div class="w3-row-padding w3-center">
+
+			<div class="w3-col l3 m6" ng-repeat="matchDay in homeCtrl.dataOne | filter: year | filter: matchDay">
+
+				<br>
+
+				<div class="w3-border" style="background-color: #3c003d">
+					<h4 class="w3-text-white data"><b>{{matchDay.name}}</b></h4>
+				</div>
+				
+				<div class="w3-container" style="margin-top:-1px" >
+					
+					<div class="w3-row w3-border w3-hover-border-black  w3-hover-shadow  w3-white w3-padding-16" ng-repeat="x in matchDay.matches | filter: teamName">					
+						<a ng-href="#/indiTeamOne/{{matchDay.idHead}}/{{x.idTail}}">	
+							<div class="w3-small">
+							
+								<div class="w3-col s6">
+									<span class="data">{{x.team1.code}} vs {{x.team2.code}}</span>
+								</div>
+								<div class="w3-col s6">
+									<span class="data">{{ x.date | date: 'mediumDate'}}</span>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		
+		<br><br><br>
+
+		<!-- 2016-17 data -->
+	<div class="w3-panel w3-card w3-padding-32" ng-init="homeCtrl.loadTwo()" style="background-color: #ededee">
+		<h1 style="padding-left:20px;color:#3c003d"><b class="w3-padding-small fontB" style="background-color:white">2016-17</b></h1>
+		<div class="w3-row-padding w3-center">
+			<div class="w3-col l3 m6" ng-repeat="matchDay in homeCtrl.dataTwo | filter: year | filter: matchDay | filter: matchMonth">
+				<br>
+				<div class="w3-border" style="background-color: #3c003d">
+					<h4 class="w3-text-white data"><b>{{matchDay.name}}</b></h4>
+				</div>
+				<div class="w3-container" style="margin-top:-1px">
+					
+					<div class="w3-row w3-hover-shadow w3-hover-border-black w3-border w3-white w3-padding-16" ng-repeat="x in matchDay.matches | filter: teamName">			<a ng-href="#/indiTeamTwo/{{matchDay.idHead}}/{{x.idTail}}">		
+							<div class="w3-small">
+								<div class="w3-col s6">
+									<span class="data">{{x.team1.code}} vs {{x.team2.code}}</span>
+								</div>
+								<div class="w3-col s6">
+									<span class="data">{{ x.date | date: 'mediumDate'}}</span>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+

@@ -1,0 +1,232 @@
+
+<div class="w3-content" style="max-width:1400px">
+	<div class="w3-panel w3-card w3-padding-32" style="background-color: #ededee">
+		
+		<!-- 2015 - 2016 -->
+		<div ng-if="statsOneCtrl.matchOne">
+			<div class="w3-content">
+				<p class="w3-center fontB" style="color:#f10052"><b class="w3-padding" style="background-color:white">{{statsOneCtrl.name}} (2015-16)</b></p>		
+			</div>
+			<br>
+			<br>
+			<table class="w3-table w3-white w3-border w3-border-black w3-hide-small">
+				
+			    <thead class="w3-border">
+			      <tr>
+			        <th class="w3-border-right w3-center"><b class="table">Played</b></th>
+			        <th class="w3-border-right w3-center"><b class="table">Won</b></th>
+			        <th class="w3-border-right w3-center"><b class="table">Drawn</b></th>
+			        <th class="w3-border-right w3-center"><b class="table">Lost</b></th>
+			        <th class="w3-border-right w3-center"><b class="table">GF</b></th>
+			        <th class="w3-border-right w3-center"><b class="table">GA</b></th>
+			        <th class="w3-border-right w3-center"><b class="table">GD</b></th>
+			        <th class="w3-border-right w3-center"><b class="table">Points</b></th>
+			      </tr>
+			    </thead>
+
+			    <tr class="w3-border">
+			      <td class="w3-border-right w3-center"><h4 class="table">38</h4></td>
+			      <td class="w3-border-right w3-center"><h4 class="table">{{statsOneCtrl.wins}}</h4></td>
+			      <td class="w3-border-right w3-center"><h4 class="table">{{statsOneCtrl.draws}}</h4></td>
+			      <td class="w3-border-right w3-center"><h4 class="table">{{statsOneCtrl.loses}}</h4></td>
+			      <td class="w3-border-right w3-center"><h4 class="table">{{statsOneCtrl.gfs}}</h4></td>
+			      <td class="w3-border-right w3-center"><h4 class="table">{{statsOneCtrl.gas}}</h4></td>
+			      <td class="w3-border-right w3-center"><h4 class="table">{{statsOneCtrl.gfs-statsOneCtrl.gas}}</h4></td>
+			      <td class="w3-border-right w3-center"><h4 class="table">{{statsOneCtrl.wins *3+statsOneCtrl.draws}}</h4></td>
+			    </tr>
+
+		  	</table>
+
+		  	<div class="w3-center w3-hide-medium w3-hide-large">
+
+		  		<div class="w3-row w3-white w3-border-bottom w3-border-left w3-border-top">
+		  			<div class="w3-col s6 w3-border-right">
+		  				<h4 class="table"><b>Played</b></h4>
+		  			</div>
+		  			<div class="w3-col s6 w3-border-right">
+		  				<h4 class="table">38</h4>
+		  			</div>
+		  		</div>
+
+		  		<div class="w3-row w3-white  w3-border-bottom w3-border-left">
+		  			<div class="w3-col s6 w3-border-right">
+		  				<h4 class="table"><b>Won</b></h4>
+		  			</div>
+		  			<div class="w3-col s6 w3-border-right">
+		  				<h4 class="table">{{statsOneCtrl.wins}}</h4>
+		  			</div>
+		  		</div>
+
+		  		<div class="w3-row w3-white  w3-border-bottom w3-border-left">
+		  			<div class="w3-col s6 w3-border-right">
+		  				<h4 class="table"><b>Drawn</b></h4>
+		  			</div>
+		  			<div class="w3-col s6 w3-border-right">
+		  				<h4 class="table">{{statsOneCtrl.draws}}</h4>
+		  			</div>
+		  		</div>
+
+		  		<div class="w3-row w3-white  w3-border-bottom w3-border-left">
+		  			<div class="w3-col s6 w3-border-right">
+		  				<h4 class="table"><b>Lost</b></h4>
+		  			</div>
+		  			<div class="w3-col s6 w3-border-right">
+		  				<h4 class="table">{{statsOneCtrl.loses}}</h4>
+		  			</div>
+		  		</div>
+
+		  		<div class="w3-row w3-white  w3-border-bottom w3-border-left">
+		  			<div class="w3-col s6 w3-border-right">
+		  				<h4 class="table"><b>GF</b></h4>
+		  			</div>
+		  			<div class="w3-col s6 w3-border-right">
+		  				<h4 class="table">{{statsOneCtrl.gfs}}</h4>
+		  			</div>
+		  		</div>
+
+		  		<div class="w3-row w3-white  w3-border-bottom w3-border-left">
+		  			<div class="w3-col s6 w3-border-right">
+		  				<h4 class="table"><b>GA</b></h4>
+		  			</div>
+		  			<div class="w3-col s6 w3-border-right">
+		  				<h4 class="table">{{statsOneCtrl.gas}}</h4>
+		  			</div>
+		  		</div>
+
+		  		<div class="w3-row w3-white  w3-border-bottom w3-border-left">
+		  			<div class="w3-col s6 w3-border-right">
+		  				<h4 class="table"><b>GD</b></h4>
+		  			</div>
+		  			<div class="w3-col s6 w3-border-right">
+		  				<h4 class="table">{{statsOneCtrl.gfs-statsOneCtrl.gas}}</h4>
+		  			</div>
+		  		</div>
+
+		  		<div class="w3-row w3-white  w3-border-bottom">
+		  			<div class="w3-col s6 w3-border-right w3-border-left">
+		  				<h4 class="table"><b>Points</b></h4>
+		  			</div>
+		  			<div class="w3-col s6 w3-border-right">
+		  				<h4 class="table">{{statsOneCtrl.wins *3+statsOneCtrl.draws}}</h4>
+		  			</div>
+		  		</div>
+
+		  	</div>
+		</div>
+
+
+		<!-- 2016 - 17 -->
+		<div ng-if="statsTwoCtrl.matchTwo">  	
+		  	<div class="w3-content">
+				<p class="w3-center fontB" style="color:#f10052"><b class="w3-padding" style="background-color:white">{{statsTwoCtrl.name}} (2016-17)</b></p>		
+			</div>
+			<br>
+			<br>
+			<table class="w3-table w3-white w3-border w3-border-black w3-hide-small">
+				
+			    <thead class="w3-border">
+			      <tr>
+			        <th class="w3-border-right w3-center"><b class="table">Played</b></th>
+			        <th class="w3-border-right w3-center"><b class="table">Won</b></th>
+			        <th class="w3-border-right w3-center"><b class="table">Drawn</b></th>
+			        <th class="w3-border-right w3-center"><b class="table">Lost</b></th>
+			        <th class="w3-border-right w3-center"><b class="table">GF</b></th>
+			        <th class="w3-border-right w3-center"><b class="table">GA</b></th>
+			        <th class="w3-border-right w3-center"><b class="table">GD</b></th>
+			        <th class="w3-border-right w3-center"><b class="table">Points</b></th>
+			      </tr>
+			    </thead>
+
+			    <tr class="w3-border">
+			      <td class="w3-border-right w3-center"><h4 class="table">38</h4></td>
+			      <td class="w3-border-right w3-center"><h4 class="table">{{statsTwoCtrl.wins}}</h4></td>
+			      <td class="w3-border-right w3-center"><h4 class="table">{{statsTwoCtrl.draws}}</h4></td>
+			      <td class="w3-border-right w3-center"><h4 class="table">{{statsTwoCtrl.loses}}</h4></td>
+			      <td class="w3-border-right w3-center"><h4 class="table">{{statsTwoCtrl.gfs}}</h4></td>
+			      <td class="w3-border-right w3-center"><h4 class="table">{{statsTwoCtrl.gas}}</h4></td>
+			      <td class="w3-border-right w3-center"><h4 class="table">{{statsTwoCtrl.gfs-statsTwoCtrl.gas}}</h4></td>
+				  <td class="w3-border-right w3-center"><h4 class="table">{{statsTwoCtrl.wins *3+statsTwoCtrl.draws}}</h4></td>
+			    </tr>
+
+		  	</table>
+
+
+		  	<div class="w3-center w3-hide-medium w3-hide-large">
+
+		  		<div class="w3-row w3-white w3-border-bottom w3-border-left w3-border-top">
+		  			<div class="w3-col s6 w3-border-right">
+		  				<h4 class="table"><b>Played</b></h4>
+		  			</div>
+		  			<div class="w3-col s6 w3-border-right">
+		  				<h4 class="table">38</h4>
+		  			</div>
+		  		</div>
+
+		  		<div class="w3-row w3-white  w3-border-bottom w3-border-left">
+		  			<div class="w3-col s6 w3-border-right">
+		  				<h4 class="table"><b>Won</b></h4>
+		  			</div>
+		  			<div class="w3-col s6 w3-border-right">
+		  				<h4 class="table">{{statsTwoCtrl.wins}}</h4>
+		  			</div>
+		  		</div>
+
+		  		<div class="w3-row w3-white  w3-border-bottom w3-border-left">
+		  			<div class="w3-col s6 w3-border-right">
+		  				<h4 class="table"><b>Drawn</b></h4>
+		  			</div>
+		  			<div class="w3-col s6 w3-border-right">
+		  				<h4 class="table">{{statsTwoCtrl.draws}}</h4>
+		  			</div>
+		  		</div>
+
+		  		<div class="w3-row w3-white  w3-border-bottom w3-border-left">
+		  			<div class="w3-col s6 w3-border-right">
+		  				<h4 class="table"><b>Lost</b></h4>
+		  			</div>
+		  			<div class="w3-col s6 w3-border-right">
+		  				<h4 class="table">{{statsTwoCtrl.loses}}</h4>
+		  			</div>
+		  		</div>
+
+		  		<div class="w3-row w3-white  w3-border-bottom w3-border-left">
+		  			<div class="w3-col s6 w3-border-right">
+		  				<h4 class="table"><b>GF</b></h4>
+		  			</div>
+		  			<div class="w3-col s6 w3-border-right">
+		  				<h4 class="table">{{statsTwoCtrl.gfs}}</h4>
+		  			</div>
+		  		</div>
+
+		  		<div class="w3-row w3-white  w3-border-bottom w3-border-left">
+		  			<div class="w3-col s6 w3-border-right">
+		  				<h4 class="table"><b>GA</b></h4>
+		  			</div>
+		  			<div class="w3-col s6 w3-border-right">
+		  				<h4 class="table">{{statsTwoCtrl.gas}}</h4>
+		  			</div>
+		  		</div>
+
+		  		<div class="w3-row w3-white  w3-border-bottom w3-border-left">
+		  			<div class="w3-col s6 w3-border-right">
+		  				<h4 class="table"><b>GD</b></h4>
+		  			</div>
+		  			<div class="w3-col s6 w3-border-right">
+		  				<h4 class="table">{{statsTwoCtrl.gfs-statsTwoCtrl.gas}}</h4>
+		  			</div>
+		  		</div>
+
+		  		<div class="w3-row w3-white  w3-border-bottom">
+		  			<div class="w3-col s6 w3-border-right w3-border-left">
+		  				<h4 class="table"><b>Points</b></h4>
+		  			</div>
+		  			<div class="w3-col s6 w3-border-right">
+		  				<h4 class="table">{{statsTwoCtrl.wins *3+statsTwoCtrl.draws}}</h4>
+		  			</div>
+		  		</div>
+
+		  	</div>
+		</div>	
+
+	</div>	
+</div>
