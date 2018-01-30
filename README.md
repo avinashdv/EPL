@@ -10,8 +10,8 @@ Software's needed to open these files are either sublime or atom.
 
 ## Deployment
 
-Chrome- It requires a local server for the website to be displayed.
-FireFox- It doesn't require local server, results are displayed on the browser without any server support.
+* Chrome- It requires a local server for the website to be displayed.
+* FireFox- It doesn't require local server, results are displayed on the browser without server support
 
 ## Built With
 
